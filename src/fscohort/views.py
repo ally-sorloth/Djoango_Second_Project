@@ -30,11 +30,14 @@ def student_list(request):
     }
     return render(request, "fscohort/student_list.html", context)
 
+
 def student_add(request):
     form = StudentForm()
-    if request.method == "POST"
-    
-    
+    if request.method == "POST":
+        print(request.POST)
+        form = StudentForm(request.POST)
+        if form.is_valid():
+            form.save()
     context = {
         'form': form
     }
