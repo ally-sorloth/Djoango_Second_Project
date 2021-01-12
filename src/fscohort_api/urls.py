@@ -1,6 +1,5 @@
 from django.urls import path
 from .views import home_api, StudentList, StudentGetUpdateDelete
-
 urlpatterns = [
     path("home-api/", home_api),
     path("<int:id>/", StudentGetUpdateDelete.as_view(), name="detail"),
