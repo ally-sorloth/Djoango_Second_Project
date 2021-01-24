@@ -32,7 +32,7 @@ def home_api(request):
 #         student_list = []
 #         for student in students: # mevlüt, henry
 #             student_list.append({
-#                 "fisrtname": student.first_name,
+#                 "firstname": student.first_name,
 #                 "lastname": student.last_name,
 #                 "number": student.number
 #             })
